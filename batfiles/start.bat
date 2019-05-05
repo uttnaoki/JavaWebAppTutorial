@@ -5,5 +5,7 @@ set CATALINA_OPTS=-Dfile.encoding=UTF-8
 set PATH=%JAVA_HOME%\bin;%PATH%
 set CLASSPATH=%CATALINA_HOME%\lib\servlet-api.jar
 
+set JAVA_OPTS=-Djava.net.preferIPv4Stack=true
+
 start "tomcat"
 start "compile" /d %CATALINA_HOME%\webapps\book\WEB-INF\src
